@@ -92,8 +92,8 @@ Public Methods
 
 	OpenModal.buttonOkText( value )
 
-Changes the text of the "Ok" button when the OpenModal window is already shown. This is useful if you want to change the text
-of the button to give a feedback to the user (like when you're saving some data via Ajax).
+Changes the text of the "Ok" button when the OpenModal window is already shown. This is useful if you want to change button's text
+and give a feedback to the user (like when you're saving some data via Ajax).
 
 	OpenModal.buttonCancelText( value )
 
@@ -106,8 +106,8 @@ Returns the modal window's DOM object.
 Contributions
 -------------
 
-- Source hosted at [GitHub](https://github.com/nico87/OpenModal)
-- Report issues, questions, feature requests on [GitHub Issues](https://github.com/nico87/OpenModal/issues)
++ Source hosted at [GitHub](https://github.com/nico87/OpenModal)
++ Report issues, questions, feature requests on [GitHub Issues](https://github.com/nico87/OpenModal/issues)
 
 Pull requests are very welcome! Make sure your patches are well tested. Please create a topic branch for every separate change you make.
 
