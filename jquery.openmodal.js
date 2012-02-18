@@ -200,7 +200,7 @@
 				type: "GET",
 				success: function ( data ) {
 					content.html( data );
-					showButtons();
+					_buttons();
 					popup.width( settings.width );
 					centerPopup();
 					if ( settings.onLoad !== null ) {
@@ -209,7 +209,7 @@
 				},
 				error: function ( jqXHR, textStatus, errorThrown ) {
 					content.html( settings.url + ": " + errorThrown );
-					showButtons();
+					_buttons();
 					popup.width( settings.width );
 					_center();
 					if ( settings.onError !== null ) {
