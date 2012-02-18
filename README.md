@@ -77,11 +77,11 @@ The OpenModal window jQuery object is passed as parameter.
 
 	onSuccess: function ( openModal ) { }
 
-This callback is executed when the user presses the "Ok" button.
+This callback is executed when the user presses the "Ok" button. If it returns false, the modal window is not closed.
 
 	onCancel: function ( openModal ) { }
 
-This callback is executed when the user presses the "Cancel" button.
+This callback is executed when the user presses the "Cancel" button. If it returns false, the modal window is not closed.
 
 	onError: function ( openModal ) { }
 
