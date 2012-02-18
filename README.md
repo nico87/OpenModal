@@ -103,6 +103,18 @@ Changes the text of the "Cancel" button when the OpenModal window is already sho
 
 Returns the modal window's DOM object.
 
+Contributions
+-------------
+
+- Source hosted at [GitHub](https://github.com/nico87/OpenModal)
+- Report issues, questions, feature requests on [GitHub Issues](https://github.com/nico87/OpenModal/issues)
+
+Pull requests are very welcome! Make sure your patches are well tested. Please create a topic branch for every separate change you make.
+
 Licence
 -------
 This project is released under both [GNU GPL V2](http://www.gnu.org/licenses/gpl-2.0.html) and [MIT](http://www.opensource.org/licenses/mit-license.php) licences.
+
+Author
+------
+[Claudio Gabriele Nicolotti](http://github.com/nico87)
