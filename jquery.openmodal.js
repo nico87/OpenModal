@@ -178,7 +178,7 @@
 			});
 
 		// If the buttons are not shown, the modal window is hidden by clicking on the background
-		if ( !settings.buttonok && !settings.buttonCancel && !settings.fixedWindow )
+		if ( !settings.buttonOk && !settings.buttonCancel && !settings.fixedWindow )
 			bg.click( _hide );
 
 		// Show the background and append the popup code to the DOM
