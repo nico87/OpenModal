@@ -38,6 +38,7 @@
 			width: 400,							// Width of the window. Height is calculated automatically
 			buttonOk: true,						// Show the "Ok" button?
 			buttonCancel: false,				// Show the "Cancel" button?
+			locked: false,						// Is the modal window locked?
 			cssId: "openmodal",					// CSS id of the OpenModal DOM object
 			loaderUrl: "ajax-loader.gif",		// Url of the ajax loader image
 			l10n: {
@@ -178,7 +179,7 @@
 			});
 
 		// If the buttons are not shown, the modal window is hidden by clicking on the background
-		if ( !settings.buttonOk && !settings.buttonCancel && !settings.fixedWindow )
+		if ( !settings.buttonOk && !settings.buttonCancel && !settings.locked )
 			bg.click( _hide );
 
 		// Show the background and append the popup code to the DOM

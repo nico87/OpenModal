@@ -34,6 +34,10 @@ If no URL and HTML code are provided, this parameter is used to retrieve an imag
 
 The width of the window in case the url or html parameters are used. The height is calculated automatically.
 
+	locked: false
+
+If true, the window can't be closed by the user if the buttons are not shown. Clicking on the background does nothing.
+
 	buttonOk: true
 
 True to show the modal window's "Ok" button.
