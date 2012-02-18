@@ -26,23 +26,23 @@
 		| -----------------------------------------
 		*/
 		settings = $.extend({
-			duration: 250, 					// fadeIn, fadeOut effect duration
-			onLoad: null, 					// onLoad event callback
-			onSuccess: null,				// onSuccess event callback
-			onCancel: null,					// onCancel event callback
-			onClose: null,					// onClose event callback
-			onError: null,					// onError event callback
-			html: '',						// HTML code shown in the modal window
-			img: '',						// Image src to load in the modal window
-			url: '',						// URL to load in the modal window
-			width: 400,						// Width of the window. Height is calculated automatically
-			buttonOk: true,					// Show the "Ok" button?
-			buttonCancel: false,			// Show the "Cancel" button?
-			cssId: "openmodal",				// CSS id of the OpenModal DOM object
-			loaderUrl: "ajax-loader.gif",	// Url of the ajax loader image
+			duration: 250, 						// fadeIn, fadeOut effect duration
+			onLoad: null, 						// onLoad event callback
+			onSuccess: null,					// onSuccess event callback
+			onCancel: null,						// onCancel event callback
+			onClose: null,						// onClose event callback
+			onError: null,						// onError event callback
+			html: '',							// HTML code shown in the modal window
+			img: '',							// Image src to load in the modal window
+			url: '',							// URL to load in the modal window
+			width: 400,							// Width of the window. Height is calculated automatically
+			buttonOk: true,						// Show the "Ok" button?
+			buttonCancel: false,				// Show the "Cancel" button?
+			cssId: "openmodal",					// CSS id of the OpenModal DOM object
+			loaderUrl: "ajax-loader.gif",		// Url of the ajax loader image
 			l10n: {
-				lang_ok: "Ok",				// Localization for the "Ok" button
-				lang_cancel: "Cancel"		// Localization for the "Cancel" button
+				lang_ok: "Ok",					// Localization for the "Ok" button
+				lang_cancel: "Cancel"			// Localization for the "Cancel" button
 			}
 		}, settings);
 
@@ -52,11 +52,11 @@
 		| -----------------------------------------
 		*/
 
-		var openModal = this;				// Store this!
-		var modal = null;					// Modal window's jQuery object
-		var content = null;					// Modal window's content jQuery object
-		var bg = null;						// Modal windows' background jQuery object
-		var code = "";						// Contains the modal window's HTML code
+		var openModal = this;					// Store this!
+		var modal = null;						// Modal window's jQuery object
+		var content = null;						// Modal window's content jQuery object
+		var bg = null;							// Modal windows' background jQuery object
+		var code = "";							// Contains the modal window's HTML code
 
 		/*
 		| -----------------------------------------
@@ -264,7 +264,7 @@
 		if ( settings.buttonOk ) {
 			popup.find( "#" + settings.cssId + "_buttonok" ).click(function () {
 				if ( settings.onSuccess !== null ) {
-					if ( settings.onSuccess( openModal ) !== false ) {
+					if ( settings.onSuccess(openModal) !== false ) {
 						_hide();
 					}
 				} else
@@ -276,7 +276,7 @@
 		if ( settings.buttonCancel ) {
 			popup.find( "#" + settings.cssId + "_buttoncancel" ).click(function () {
 				if ( settings.onCancel !== null ) {
-					if ( settings.onCancel( openModal ) !== false ) {
+					if ( settings.onCancel(openModal) !== false ) {
 						_hide();
 					}
 				} else
