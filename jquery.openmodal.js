@@ -1,5 +1,5 @@
 /*!
- * jQuery Cookie Plugin
+ * jQuery Modal Window Plugin
  * https://github.com/nico87/OpenModal
  *
  * Copyright 2012 Claudio Gabriele Nicolotti
