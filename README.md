@@ -1,4 +1,4 @@
-jQuery.openModal
+jQuery.openModal (Version 1.0)
 =========
 Is a free and opensource modal window jQuery plugin.
 
