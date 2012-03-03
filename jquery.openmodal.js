@@ -32,18 +32,18 @@
 			onCancel: null,						// onCancel event callback
 			onClose: null,						// onClose event callback
 			onError: null,						// onError event callback
-			html: '',							// HTML code shown in the modal window
-			img: '',							// Image src to load in the modal window
-			url: '',							// URL to load in the modal window
-			width: 400,							// Width of the window. Height is calculated automatically
+			html: '',						// HTML code shown in the modal window
+			img: '',						// Image src to load in the modal window
+			url: '',						// URL to load in the modal window
+			width: 400,						// Width of the window. Height is calculated automatically
 			buttonOk: true,						// Show the "Ok" button?
-			buttonCancel: false,				// Show the "Cancel" button?
+			buttonCancel: false,					// Show the "Cancel" button?
 			locked: false,						// Is the modal window locked?
 			cssId: "openmodal",					// CSS id of the OpenModal DOM object
-			loaderUrl: "ajax-loader.gif",		// Url of the ajax loader image
+			loaderUrl: "ajax-loader.gif",				// Url of the ajax loader image
 			l10n: {
 				lang_ok: "Ok",					// Localization for the "Ok" button
-				lang_cancel: "Cancel"			// Localization for the "Cancel" button
+				lang_cancel: "Cancel"				// Localization for the "Cancel" button
 			}
 		}, settings);
 
@@ -53,7 +53,7 @@
 		| -----------------------------------------
 		*/
 
-		var openModal = this;					// Store this!
+		var openModal = this;						// Store this!
 		var modal = null;						// Modal window's jQuery object
 		var content = null;						// Modal window's content jQuery object
 		var bg = null;							// Modal windows' background jQuery object
@@ -67,8 +67,8 @@
 		code  = "<div id=\"" + settings.cssId + "\">";
 		code += "<div id=\"" + settings.cssId  + "_content\"></div>";
 		code += "<div id=\"" +  settings.cssId  + "_buttons\">";
-		code += "<a href=\"#\" id=\"" + settings.cssId + "_buttonok\">" + settings.l10n.lang_ok + "</a>";
-		code += "<a href=\"#\" id=\"" + settings.cssId + "_buttoncancel\">" + settings.l10n.lang_cancel + "</a>";
+		code += "<button id=\"" + settings.cssId + "_buttonok\">" + settings.l10n.lang_ok + "</button>";
+		code += "<button id=\"" + settings.cssId + "_buttoncancel\">" + settings.l10n.lang_cancel + "</button>";
 		code += "</div>";
 
 		/*
