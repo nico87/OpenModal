@@ -42,7 +42,7 @@ If true, the window can't be closed by the user if the buttons are not shown. Cl
 
 True to show the modal window's "Ok" button.
 
-	buttonCancel: cancel
+	buttonCancel: false
 
 True to show the modal window's "Cancel" button.
 
