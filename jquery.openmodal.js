@@ -159,7 +159,7 @@
 				popup.find( "#" + settings.cssId + "_buttonok" ).css( "display", "none" );
 			}
 			if ( !settings.buttonCancel ) {
-				popup.find( "#" + settings.cssId + "_buttonCancel" ).css( "display", "none" );
+				popup.find( "#" + settings.cssId + "_buttoncancel" ).css( "display", "none" );
 			}
 		}
 
